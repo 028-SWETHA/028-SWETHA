@@ -1,0 +1,40 @@
+ex no 3
+1.positive /negative number
+python program
+
+n=int(input("enter a number:"))
+if n>0:
+      print("positive number")
+elif n==0:
+      print("zero")
+else:
+      print("negative number")
+output
+enter a number:2
+positive number
+2.upper case /lower case
+python program
+
+ch=input("enter alphabet")
+if((ch>='A')and (ch<='Z')):
+        print("you enter upper case alphabet")
+elif((ch>='a')and (ch<='z')):
+       print("you enter lower case alphabet")
+output
+enter alphabet:s
+you enter lower case alphabet
+
+
+3.to find salary
+python program
+
+sal=int(input("enter salary:"))
+if(sal>10000):
+    bonus=0.10*sal
+else:
+    bonus=0.12*sal
+Total=sal+bonus
+print(sal,"is salary",bonus,"is bonus")
+output
+enter salary:9000
+9000 is salary 1080.0 is bonus
