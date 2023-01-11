@@ -43,7 +43,45 @@ output:
 1 2 3 4
 1 2 3 4 5
   
- 
+Pyramid Patterns- Downward half-Pyramid Pattern of Star
+Pattern: –
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+
+4.star pattern
+PYTHON PROGRAM
+num=int(input("Enter number of rows:"))
+for i in range(num,0,-1):
+    for j in range(0,i):
+      print("*",end=" ")
+    print()
+
+OUTPUT:
+Enter number of rows:5
+* * * * *
+* * * *
+* * *
+* *
+*
+5.Convert binary to decimal number
+ PYTHON PROGRAM:
+n=int(input("Enter a binary number:"))
+s=0
+i=0
+while(n>0):
+    r=n%10
+    s=s+r*(2**i)
+    n//=10
+    i+=1
+print(s)
+OUTPUT:
+Enter a binary number:1010
+10
+
+
 
 
        
