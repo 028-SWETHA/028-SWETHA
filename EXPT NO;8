@@ -1,0 +1,79 @@
+# divide by zero
+a=int(input("enter a first number:"))
+b=int(input("enter a second number:"))
+c=int(input("enter a third number:"))
+try:
+    q=a/(b-c)
+    print('quotient:',q)
+except zeroDivisionError:
+    print('Division by zero:')
+
+OUTPUT:
+enter a first number:78
+enter a second number:90
+enter a third number:65
+quotient: 3.12
+>>>
+
+#Voter's age validity
+try:
+    age=int(input('enter your age:'))
+    if age>18:
+        print('eligible to vote')
+    else:
+        print('not eligible to vote')
+except ValueError as err:
+     print(err)
+else:
+    print('Thank you,you have successfully checked the voting eligibility')
+    
+     #Voter's age validity
+try:
+    age=int(input('enter your age:'))
+    if age>18:
+        print('eligible to vote')
+    else:
+        print('not eligible to vote')
+except ValueError as err:
+     print(err)
+else:
+    print('Thank you,you have successfully checked the voting eligibility')
+    
+     
+OUTPUT:
+enter your age:15
+not eligible to vote
+Thank you,you have successfully checked the voting eligibility
+enter your age:28
+eligible to vote
+Thank you,you have successfully checked the voting eligibility
+>>>
+
+#Student mark range validation
+try:
+    mark=int(input('enter your mark:'))
+    if mark>90:
+        print('your grade is zero-Outstanding performance')
+        
+    elif 90<=mark>80:
+        print('your grade is A+-Excellent performer')
+    elif 80<=mark>70:
+        print('your grade is A -Very good performer')
+    elif 70<=mark>60:
+        print('your grade is B+-Good performer')
+    elif 60<=mark>50:
+        print('your grade is B-Average')
+except ValueError as err:
+       print(err)
+finally:
+       print('Thank you,you have successfully verified about your course grade')
+            
+OUTPUT:
+enter your mark:99
+your grade is zero-Outstanding performance
+Thank you,you have successfully verified about your course grade
+>>>
+enter your mark:72
+your grade is B+-Good performer
+Thank you,you have successfully verified about your course grade
+>>>
