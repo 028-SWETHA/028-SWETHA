@@ -1,0 +1,100 @@
+EXERCISE :7
+
+1)LIST:
+PROGRAM:
+list1=['books','novels','manuscripts','tamil books']
+list2=['maths books','puzzles','G.K']
+print(list1)
+print(list2)
+list1.append('notes')
+print(list1)
+list1.insert(2,'python progamming')
+print(list1)
+list2.append('java')
+print(list2)
+list2.pop(0)
+print(list2)
+list1.remove('tamil books')
+print(list1)
+list1.extend(list2)
+print(list1)
+
+OUTPUT:
+['books', 'novels', 'manuscripts', 'tamil books']
+['maths books', 'puzzles', 'G.K']
+['books', 'novels', 'manuscripts', 'tamil books', 'notes']
+['books', 'novels', 'python progamming', 'manuscripts', 'tamil books', 'notes']
+['maths books', 'puzzles', 'G.K', 'java']
+['puzzles', 'G.K', 'java']
+['books', 'novels', 'python progamming', 'manuscripts', 'notes']
+['books', 'novels', 'python progamming', 'manuscripts', 'notes', 'puzzles', 'G.K', 'java']
+
+2)TUPLE:
+PROGRAM:
+tup1=('engine','brake','horn','mirror')
+tup2=('fueltank','seat','accelerater')
+print(tup1)
+print(tup2)
+print(tup1[0])
+print(tup2[2])
+print( 'sound' in tup1)
+print('seat' in tup2)
+print(tup1+('wheel','petrol','diesel'))
+
+OUTPUT:
+('engine', 'brake', 'horn', 'mirror')
+('fueltank', 'seat', 'accelerater')
+engine
+accelerater
+False
+True
+('engine', 'brake', 'horn', 'mirror', 'wheel', 'petrol', 'diesel')
+
+3)SET:
+PROGRAM:
+set1={76,97,100,986,76,343,100,65}
+set2={986,76,948,231,100}
+print (set1)
+print(set2)
+print(set1-set2)
+print(set2-set1)
+print(set1&set2)
+print(set1^set2)
+print(set1|set2)
+
+OUTPUT:
+{65, 97, 100, 343, 986, 76}
+{100, 948, 231, 986, 76}
+{65, 97, 343}
+{948, 231}
+{986, 100, 76}
+{65, 97, 948, 231, 343}
+{65, 97, 100, 231, 76, 948, 343, 986}
+
+
+
+4)DICTIONARY:
+PROGRAM:
+dict1={}
+print(dict1)
+dict1={'os':'windows 10','processor':'intel core i5','memory':'8GB','hardware':'120 GB','wireless net adaptor':802.11}
+print(dict1)
+dict1['os']='windows 11'
+print(dict1)
+print(dict1.get('memory'))
+print(len(dict1))
+print(dict1.keys())
+print(dict1.values())
+print(dict1.items())
+
+OUTPUT:
+{}
+{'os': 'windows 10', 'processor': 'intel core i5', 'memory': '8GB', 'hardware': '120 GB', 'wireless net adaptor': 802.11}
+{'os': 'windows 11', 'processor': 'intel core i5', 'memory': '8GB', 'hardware': '120 GB', 'wireless net adaptor': 802.11}
+8GB
+5
+dict_keys(['os', 'processor', 'memory', 'hardware', 'wireless net adaptor'])
+dict_values(['windows 11', 'intel core i5', '8GB', '120 GB', 802.11])
+dict_items([('os', 'windows 11'), ('processor', 'intel core i5'), ('memory', '8GB'), ('hardware', '120 GB'), ('wireless net adaptor', 802.11)])
+
+
